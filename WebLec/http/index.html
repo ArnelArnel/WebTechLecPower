@@ -37,99 +37,131 @@
 										<li>Option</li>
 										<small class="definition"><ul><li>Allows the client to determine the option and requirements associated to the resource</li></ul></small>
 										<li>Trace</li>
+										<small class="definition"><ul><li>Allows the client to see what is being received at the other end of the request chain and use that data for testing or diagnostic information.</li></ul></small>
+
 									</ul>
 			<section>
 				<h3>Requests Message</h3>
 					<ul>
 						<li>Request Line</li>
+						<small class="definition"><ul><li>Begins with a method token then a Request-URI and protocol version then ending with CRLF.</li></ul></small>
 						<li>Message Headers</li>
+						<small class="definition"><ul><li></li></ul></small>
 						<li>Empty Line</li>
+						<small class="definition"><ul><li></li></ul></small>
 						<li>Message Body</li>
+						<small class="definition"><ul><li></li></ul></small>
 					</ul>
 			</section>
 			<section>
 				<h4>HTTP Response Messsages </h4>
 						<ul>
 							<li>Status Line</li>
+							<small class="definition"><ul><li></li></ul></small>
 							<li>Messages Headers</li>
+							<small class="definition"><ul><li></li></ul></small>
 							<li>Empty Line</li>
+							<small class="definition"><ul><li></li></ul></small>
 							<li>Message Body</li>
+							<small class="definition"><ul><li></li></ul></small>
 						</ul>
 			</section>
 			<section>
 				<h4>Method Properties</h4>
 						<ul>
-							<li>Safe Methods (Get,Head,Options,Trace)</li>
-							<li>Idempotent Method (Get,Head,Options,Trace,Put,Delete)</li>
+							<li>Safe Methods </li>
+							<small class="definition"><ul><li>Get,Head,Options,Trace</li></ul></small>
+							<li>Idempotent Method </li>
+							<small class="definition"><ul><li></li>Get,Head,Options,Trace,Put,Delete</ul></small>
 						<ul>
 			</section>
 			<section>
 				<h4>HTTP Status Codes</h4>
 						<ul>
 							<li>Informational</li>
+							<small class="definition"><ul><li></li></ul></small>
 							<li>Success</li>
+							<small class="definition"><ul><li></li></ul></small>
 							<li>Redirection</li>
+							<small class="definition"><ul><li></li></ul></small>
 							<li>Client Error</li>
+							<small class="definition"><ul><li></li></ul></small>
 							<li>Server Error</li>
+							<small class="definition"><ul><li></li></ul></small>
 						</ul>
 			</section>
 			<section>
 				<h4>HTTP Message Headers</h4>
 						<ul>
 							<li>General Header Fields</li>
+							<small class="definition"><ul><li>These applies to both requests and responses although there are no relation to the data eventually transfered in the body.</li></ul></small>
 							<li>Request Header Fields</li>
+							<small class="definition"><ul><li>Request header fields has more information regarding the client or the resources that are about to be fetched.</li></ul></small>
 							<li>Response Header Fields</li>
+							<small class="definition"><ul><li>These headers contains additional info regarding the response, for example; the location or about name and version of the server itself.</li></ul></small>
 							<li>Entity Header Fields</li>
+							<small class="definition"><ul><li>Entity header fields has more info about the content length, MIME-type, etc of the body of the entity.</li></ul></small>
 						</ul>
 			</section>
 			<section>
 				<h4>HTTP Extensions Web Dav (RFC 4918)</h4>
 						<ul>
 							<li>Requests Methods</li>
-							<li>Message Headers</li>
+							<small class="definition"><ul><li>Request methods are defined to specify the action that is wanted to be performed for a given resource.</li></ul></small>
 							<li>Status Codes</li>
+							<small class="definition"><ul><li>Are made to imply either a specific HTTP request has already been completed or not.</li></ul></small>
 						</ul>
 			</section>
 			<section>
 				<h4>Content Negotiation</h4>
 						<ul>
-							<li>Accept MIME TYPE</li>
 							<li>Accept-Encoding</li>
+							<small class="definition"><ul><li>Requests a header of which compression algorithm or specifically a content encoding that the client understands.</li></ul></small>
 							<li>Accept-Language</li>
+							<small class="definition"><ul><li>Requests a header of which locale variant is liked better by the client and which languages the client will be able to comprehend.</li></ul></small>
 							<li>Accept-charSet</li>
+							<small class="definition"><ul><li>Requests a header of which character set is understandable by the client.</li></ul></small>
 						</ul>
 			</section>
 			<section>
 				<h4>Range Request</h4>
 						<ul>
 							<li> Accept Ranges</li>
+							<small class="definition"><ul><li>These are markers used to support the partial requests on the server.</li></ul></small>
 							<li> Byte Range</li>
+							<small class="definition"><ul><li>The main purpose of byte range is basically to avoid the need to download files even if a small section is all that is required this is essential in terms of conserving bandwidth usage.</li></ul></small>
 						</ul>
 			</section>
 			<section>
 				<h4>Authorization/Authentication</h4>
 						<ul>
 							<li>Proxy-authenticate</li>
+							<small class="definition"><ul><li>Allows the proxy server to transmit the request further by authenticating requests. </li></ul></small>
 							<li>WWW-authenticate</li>
-							<li>Protected Content</li>
+							<small class="definition"><ul><li>Defines authentication method which is supposed to be used to get access on resources.</li></ul></small>
+
 						</ul>
 			</section>
 			<section>
 				<h4>Content</h4>
 						<ul>
 							<li>Content Models</li>
+							<small class="definition"><ul><li>A content model is basically an explanation of the supposed contents of the element</li></ul></small>
 							<li>Void Elements</li>
+							<small class="definition"><ul><li>Element which does not allow its content model to gain contents in any form under any given situation.</li></ul></small>
 						</ul>
 			</section>
 			<section>
 				<h4>Attributes and Attribute Values</h4>
 					<ul>
 						<li>Global Attribute</li>
-						<li>Custom Non-visible Data Attribute</li>
+						<small class="definition"><ul><li>Global attributes are attributes that are common in any elements of html. This means that they can be used in any element. But on the other side, there will be no effects on some elements</li></ul></small>
 						<li>WAI-ARIA Attribute</li>
-						<li>Element - Specific Attribute<li>
+						<small class="definition"><ul><li>Makes a way to create web contents and web applications more friendly for people with disabilities.</li></ul></small>
 						<li>Character Reference</li>
+						<small class="definition"><ul><li>These are character encoding-independent mechanisms that is used in inputting any character. </li></ul></small>
 						<li>Comments</li>
+						<small class="definition"><ul><li>Comment tags are not displayed on the browser but are used to put comments on the source code.</li></ul></small>
 					</ul>
 			</section>
 			
