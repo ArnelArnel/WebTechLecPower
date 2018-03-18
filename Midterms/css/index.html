@@ -23,9 +23,21 @@
     				</ul>
 		    	<li><a href="#hss">HTML Stylesheet</a></li>
 		    	<li><a href="#cState">CSS Statements</a></li>
-		    	<li><a href="#cSel">CSS Selector</a></li>
+		    	<li>CSS Selector</li>
+		    		<ul>
+		    			<li><a href="#select">Selector</a></li>
+		    			<li><a href="#sSyntex">Selector Syntax</a></li>
+		    			<li><a href="#sSelector">Simple Selector</a></li>
+		    			<li><a href="#pClasses">Pseudo Classes</a></li>
+		    			<li><a href="#com">Combinators</a></li>
+		    			<li><a href="#pElements">Pseudo Elements</a></li>
+		    		</ul>
 		    	<li><a href="#cRP">CSS Rule Precedence</a></li>
-		    	<li><a href="#cDec">CSS Declaration</a></li>
+		    	<li>CSS Declaration</li>
+		    		<ul>
+		    			<li><a href="#properties">Properties</a></li>
+		    			<li><a href="#values">Values</a></li>
+		    		</ul>
 		    	<li><a href="#cPFP">CSS Preprocessors, Frameworks & Polyfills</a></li>
 		    	<li><a href="#ref">Reference</a></li>
             </ul>
@@ -33,24 +45,162 @@
 	
 		<main>
 			<div class="paragraph">
-				<h4 id="css">What is CSS?</h4>
-				<h4 id="history">History</h4>
-				<h4>Version History</h4>
+				<section id="css">
+					<h4>What is CSS?</h4>	
+				</section>
+				<section id="history">
+					<h4>History</h4>	
+				</section>
+				<section>
+					<h4>Version History</h4>
+						<ul>
+							<article id="css1">
+							<li><h5>CSS 1</h5></li>
+								<ul>
+									
+								</ul>
+							</article>
+							<article id="css2">
+							<li><h5>CSS 2</h5></li>
+								<ul>
+									
+								</ul>
+							</article>
+							<article id="css2.1">
+							<li><h5>CSS 2 Revision 1</h5></li>
+								<ul>
+									
+								</ul>
+							</article>
+							<article id="css3">
+							<li><h5>CSS 3</h5></li>
+								<ul>
+									
+								</ul>
+							</article>
+						</ul>
+				</section>
+				<section id="hss">
+				<h4>HTML Style Sheet</h4>
 					<ul>
-						<li id="css1"><h5>CSS 1</h5></li>
-						<li id="css2"><h5>CSS 2</h5></li>
-						<li id="css2.1"><h5>CSS 2 Revision 1</h5></li>
-						<li id="css3"><h5>CSS 3</h5></li>
+						<li><h5>Source of styles for HTML documents</h5></li>
+							<ul>
+								<li><h6>author style</h6></li>
+								<li><h6>user style</h6></li>
+								<li><h6>user agent styles</h6></li>
+							</ul>
+						<li><h5>cascading origins, cascading</h5></li>
 					</ul>
-				<h4 id="hss">HTML Style Sheet</h4>
+				</section>
+				<section id="cState">
 				<h4 id="cState">CSS Statements</h4>
-				<h4 id="cSel">CSS Selector</h4>
-				<h4 id="cRP">CSS Rule Precedence</h4>
-				<h4 id="cDec">CSS Declarations</h4>
-				<h4 id="cPFP">CSS Preprocessors, Frameworks & Polyfills</h4>
-				<h4 id="ref">Reference</h4>
+					<ul>
+						<li><h5>At-Rules</h5></li>
+						<li><h5>CSS Rule Sets aka.. CSS Rules, Style Rules</h5></li>
+					</ul>
+				</section>
+				<section>
+				<h4>CSS Selector</h4>
+					<ul>
+						<article id="select">
+							<li><h5>Selector</h5></li>	
+						</article>
+						<article id="sSyntex">
+							<li><h5>Selector Syntax</h5></li>
+							<ul>
+								<li><h6>Selector Group</h6></li>
+							</ul>	
+						</article>
+						<article id="sSelector">
+							<li><h5>Simple Selectors</h5></li>
+							<ul>
+								<li><h6>universal selectors</h6></li>
+								<li><h6>type selectors</h6></li>
+								<li><h6>ID selectors</h6></li>
+								<li><h6>class selectors</h6></li>
+								<li><h6>attribute selectors</h6></li>
+							</ul>	
+						</article>
+						<article id="pClasses">
+							<li><h5>Psuedo Classes</h5></li>
+							<ul>
+								<li><h6>dynamic psuedo-classes</h6></li>
+								<li><h6>target psuedo-classes</h6></li>
+								<li><h6>language psuedo-classes</h6></li>
+								<li><h6>UI element states psuedo-classes</h6></li>
+								<li><h6>structural psuedo-classes</h6></li>
+								<li><h6>negotiation psuedo-classes</h6></li>
+							</ul>	
+						</article>
+						<article id="com">
+							<li>Combinators</li>	
+						</article>
+						<article id="pElements">
+							<li>Psuedo-elements</li>
+						</article>
+					</ul>
+				</section>
+				<section id="cRP">
+					<h4>CSS Rule Precedence</h4>
+					<ul>
+						<li><h5>Selector Multiple Style Rules</h5></li>
+							<ul>
+								<li><h6>resolution</h6></li>
+									<ul>
+										<li>by origin and importance</li>
+										<li>by specificity</li>
+										<li>by order</li>
+									</ul>
+							</ul>
+					</ul>	
+				</section>
+				<section>
+					<h4>CSS Declarations</h4>
+					<ul>
+						<article id="properties">
+							<li><h5>Properties</h5></li>
+							<ul>
+								<li><h6>short hand properties</h6></li>
+								<li><h6>vendor specific extensions</h6></li>
+								<li><h6>custome properties aka CSS variables</h6></li>
+							</ul>	
+						</article>
+						<article id="values">
+							<li><h5>Values</h5></li>
+							<ul>
+								<li><h6>value processing</h6></li>
+								<li><h6>value types</h6></li>
+									<ul>
+										<li><h6>keywords</h6></li>
+											<ul>
+												<li>css-wide keywords</li>
+												<li>property-specific keywords</li>
+											</ul>
+										<li><h6>numbers</h6></li>
+										<li><h6>dimensions</h6></li>
+											<ul>
+												<li>length units</li>
+												<li>angle units</li>
+												<li>duration units</li>
+												<li>frequency units</li>
+												<li>resolution units</li>
+											</ul>
+										<li><h6>percentages</h6></li>
+										<li><h6>URLs and URIs</h6></li>
+										<li><h6>colors</h6></li>
+									</ul>
+							</ul>
+						</article>
+					</ul>
+				</section>
+				<section id="cPFP">
+					<h4>CSS Preprocessors, Frameworks & Polyfills</h4>	
+				</section>
+				<section id="ref">
+					<h4>Reference</h4>
 					<ul style="color: blue;">
 					</ul>
+				</section>
 			</div>
 		</main>
 	<footer>
