@@ -6,9 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Cascading Style Sheet</h1>
-	</header>
+	<div class="header">
+		<header>
+			<h1>Cascading Style Sheet</h1>
+		</header>
+	</div>
+<div class="container">
+	<div class="column">
 	<section>
 		<p>Table of Contents</p>
 		    <ul class="tableContent">
@@ -38,12 +42,17 @@
 		    			<li><a href="#properties">Properties</a></li>
 		    			<li><a href="#values">Values</a></li>
 		    		</ul>
-		    	<li><a href="#cPFP">CSS Preprocessors, Frameworks & Polyfills</a></li>
+		    	<li>CSS Preprocessors, Frameworks & Polyfills</li>
+		    		<ul>
+		    			<li><a href="#Preprocessors">CSS Preprocessors</a></li>
+		    			<li><a href="#Frameworks">CSS Framewors</a></li>
+		    			<li><a href="#Polyfills">Polyfills</a></li>
+		    		</ul>
 		    	<li><a href="#ref">Reference</a></li>
             </ul>
 	</section>
-	
-		<main>
+	</div>
+		<main class="column">
 			<div class="paragraph">
 				<section id="css">
 					<h4>What is CSS?</h4>	
@@ -85,9 +94,9 @@
 					<ul>
 						<li><h5>Source of styles for HTML documents</h5></li>
 							<ul>
-								<li><h6>author style</h6></li>
-								<li><h6>user style</h6></li>
-								<li><h6>user agent styles</h6></li>
+								<li><h5>author style</h5></li>
+								<li><h5>user style</h5></li>
+								<li><h5>user agent styles</h5></li>
 							</ul>
 						<li><h5>cascading origins, cascading</h5></li>
 					</ul>
@@ -108,28 +117,28 @@
 						<article id="sSyntex">
 							<li><h5>Selector Syntax</h5></li>
 							<ul>
-								<li><h6>Selector Group</h6></li>
+								<li><h5>Selector Group</h5></li>
 							</ul>	
 						</article>
 						<article id="sSelector">
 							<li><h5>Simple Selectors</h5></li>
 							<ul>
-								<li><h6>universal selectors</h6></li>
-								<li><h6>type selectors</h6></li>
-								<li><h6>ID selectors</h6></li>
-								<li><h6>class selectors</h6></li>
-								<li><h6>attribute selectors</h6></li>
+								<li><h5>universal selectors</h5></li>
+								<li><h5>type selectors</h5></li>
+								<li><h5>ID selectors</h5></li>
+								<li><h5>class selectors</h5></li>
+								<li><h5>attribute selectors</h5></li>
 							</ul>	
 						</article>
 						<article id="pClasses">
 							<li><h5>Psuedo Classes</h5></li>
 							<ul>
-								<li><h6>dynamic psuedo-classes</h6></li>
-								<li><h6>target psuedo-classes</h6></li>
-								<li><h6>language psuedo-classes</h6></li>
-								<li><h6>UI element states psuedo-classes</h6></li>
-								<li><h6>structural psuedo-classes</h6></li>
-								<li><h6>negotiation psuedo-classes</h6></li>
+								<li><h5>dynamic psuedo-classes</h5></li>
+								<li><h5>target psuedo-classes</h5></li>
+								<li><h5>language psuedo-classes</h5></li>
+								<li><h5>UI element states psuedo-classes</h5></li>
+								<li><h5>structural psuedo-classes</h5></li>
+								<li><h5>negotiation psuedo-classes</h5></li>
 							</ul>	
 						</article>
 						<article id="com">
@@ -145,7 +154,7 @@
 					<ul>
 						<li><h5>Selector Multiple Style Rules</h5></li>
 							<ul>
-								<li><h6>resolution</h6></li>
+								<li><h5>resolution</h5></li>
 									<ul>
 										<li>by origin and importance</li>
 										<li>by specificity</li>
@@ -160,24 +169,24 @@
 						<article id="properties">
 							<li><h5>Properties</h5></li>
 							<ul>
-								<li><h6>short hand properties</h6></li>
-								<li><h6>vendor specific extensions</h6></li>
-								<li><h6>custome properties aka CSS variables</h6></li>
+								<li><h5>short hand properties</h5></li>
+								<li><h5>vendor specific extensions</h5></li>
+								<li><h5>custome properties aka CSS variables</h5></li>
 							</ul>	
 						</article>
 						<article id="values">
 							<li><h5>Values</h5></li>
 							<ul>
-								<li><h6>value processing</h6></li>
-								<li><h6>value types</h6></li>
+								<li><h5>value processing</h5></li>
+								<li><h5>value types</h5></li>
 									<ul>
-										<li><h6>keywords</h6></li>
+										<li><h5>keywords</h5></li>
 											<ul>
 												<li>css-wide keywords</li>
 												<li>property-specific keywords</li>
 											</ul>
-										<li><h6>numbers</h6></li>
-										<li><h6>dimensions</h6></li>
+										<li><h5>numbers</h5></li>
+										<li><h5>dimensions</h5></li>
 											<ul>
 												<li>length units</li>
 												<li>angle units</li>
@@ -185,16 +194,31 @@
 												<li>frequency units</li>
 												<li>resolution units</li>
 											</ul>
-										<li><h6>percentages</h6></li>
-										<li><h6>URLs and URIs</h6></li>
-										<li><h6>colors</h6></li>
+										<li><h5>percentages</h5></li>
+										<li><h5>URLs and URIs</h5></li>
+										<li><h5>colors</h5></li>
+										<li><h5>string</h5></li>
+											<p>Delimited by single quation ('') or a double quatation ("")</p>
+										<li><h5>functions</h5></li>
+										<li><h5>miscellaneous types</h5></li>
 									</ul>
 							</ul>
 						</article>
 					</ul>
 				</section>
-				<section id="cPFP">
-					<h4>CSS Preprocessors, Frameworks & Polyfills</h4>	
+				<section>
+					<h4>CSS Preprocessors, Frameworks & Polyfills</h4>
+						<ul>
+							<article id="Preprocessors">
+								<li>CSS Prepocessors</li>
+							</article>
+							<article id="Frameworks">
+								<li>CSS Frameworks</li>
+							</article>
+							<article id="Polyfills">
+								<li>Polyfills</li>
+							</article>
+						</ul>
 				</section>
 				<section id="ref">
 					<h4>Reference</h4>
@@ -203,8 +227,9 @@
 				</section>
 			</div>
 		</main>
+</div>
 	<footer>
-		<p>All rights reserved 2018.</p>	
+		<h3>All rights reserved 2018.</h3>
 	</footer>
 </body>
 </html>
