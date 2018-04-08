@@ -55,10 +55,28 @@
 		<main class="column">
 			<div class="paragraph">
 				<section id="css">
-					<h4>What is CSS?</h4>	
+					<h4>What is CSS?</h4>
+						<ul>
+							<li>
+							CSS stands for Cascading Style Sheet which is use to style an HTML Document.
+							</li>
+							<li>CSS is a language that describes the presentation of Web pages, including colors, layout and fonts which typically see in a Web pages of a webpage.</li>
+							<li>CSS files can be stored External Stylesheets, Internal Stylesheets and Inline Stylesheets.</li>
+						</ul>
 				</section>
 				<section id="history">
-					<h4>History</h4>	
+					<h4>History</h4>
+					<ul>
+						<li>The first draft of Cascading HTML Style Sheets was published by Hakon Wium Lie on October 10, 1994.</li>
+						<li>Bert Bos was the first who respond the first draft of CSS which that time he was building the Argo. Argo is a highly customizable browser with style sheets which he decided to join forces with Hakon Wium Lie.</li>
+						<li>November 1994 CSS proposal was presented at the Web Conference. The following are the topics being discuss according to WC3.
+							<ol>
+								<li>The concept of a balance between author and user preferences was novel. A fictitious screen shot showed a slider with the label user on one side and author on the other. By adjusting the slider, the user could change the mix of his own preferences and those of the author.</li>
+								<li>CSS was perceived by some as being too simple for the task it was designed for. They argued that to style documents, the power of a full programming language was needed. CSS went in the exact opposite direction by making a point out of being a simple, declarative format.</li>
+							</ol>
+						</li>
+
+					</ul>	
 				</section>
 				<section>
 					<h4>Version History</h4>
@@ -66,37 +84,102 @@
 							<article id="css1">
 							<li><h5>CSS 1</h5></li>
 								<ul>
-									
+									<li>
+										CSS level 1 specification was first published on December 17, 1996. Hakon Wium Lie and Ber Bos credited as original developers.
+									</li>
+									<li>
+										A simple style sheet mechanism</li>
+									<li>
+										Allows authors and readers to attach styles to HTML documents.
+									</li>
+									<li>
+										Human readable and writable, and expresses style in common desktop publishing terminology.
+									</li>
 								</ul>
 							</article>
 							<article id="css2">
 							<li><h5>CSS 2</h5></li>
 								<ul>
-									
+									<li>
+										CSS level 2 specification was first published as a recommendation in May 1998 and developed by the W3C.
+									</li>
+									<li>
+										Includes a number of new capabilities like absolute, relative, and fixed positioning of elements and z-index, the concept of media types.
+									</li>
+									<li>
+										Support for aural style sheets that which later replaced by the CSS 3 speech modules and bidirectional text, and new font properties such as shadows.
+									</li>
 								</ul>
 							</article>
 							<article id="css2.1">
 							<li><h5>CSS 2 Revision 1</h5></li>
 								<ul>
-									
+									<li>
+										CSS level 2.1 is a style sheets language that allows authors and users to attach stle to structured documents.
+									</li>
+									<li>
+										CSS 2.1 first became a Candidate Recommendation on February 25, 2004.
+									</li>
+									<li>
+										CSS 2.1 fixed errors in CSS 2
+									</li>
 								</ul>
 							</article>
 							<article id="css3">
 							<li><h5>CSS 3</h5></li>
 								<ul>
-									
+									<li>
+										CSS level 3 started in 1998, and stil under development until 2014.
+									</li>
+									<li>
+										CSS3 aims at extending CSS 2.1.
+									</li>
+									<li>
+										CSS3 has more support for gradients with the image tag.
+									</li>
+									<ul>
+										<li>
+											Allows you to display smooth transitions between multiple colors using browser instead of image (lessen downloading time). 
+										</li>
+									</ul>
 								</ul>
 							</article>
 						</ul>
 				</section>
 				<section id="hss">
 				<h4>HTML Style Sheet</h4>
+					<li>
+
+					</li>
 					<ul>
 						<li><h5>Source of styles for HTML documents</h5></li>
 							<ul>
 								<li><h5>author style</h5></li>
+									<ul>
+											<li><h6>
+												External style sheets (recommended)
+												<li>
+													A file containing only CSS syntax.
+												</li>
+												<li>
+													Style information is not explicitly tied directly to the document's element.
+												</li>
+											</h6></li>
+											<li><h6>
+												Embedded styles
+												<li>
+													An entire style sheet are embedded in a HTML document.
+												</li>
+											</h6></li>
+											<li><h6>
+												Inline stles
+												<li>
+													Style sheet information being applied to the current elemet.
+												</li>
+											</h6></li>
+									</ul>
 								<li><h5>user style</h5></li>
-								<li><h5>user agent styles</h5></li>
+								<li><h5>user agent styles (eg. default style sheet for HTML 4)</h5></li>
 							</ul>
 						<li><h5>cascading origins, cascading</h5></li>
 					</ul>
@@ -106,13 +189,23 @@
 					<ul>
 						<li><h5>At-Rules</h5></li>
 						<li><h5>CSS Rule Sets aka.. CSS Rules, Style Rules</h5></li>
+						<ul>
+							<li><h5>
+								A set that consists of a selector and a declaration block.
+							</h5></li>
+						</ul>
 					</ul>
 				</section>
 				<section>
 				<h4>CSS Selector</h4>
 					<ul>
 						<article id="select">
-							<li><h5>Selector</h5></li>	
+							<li><h5>Selector</h5></li>
+							<ul><h5>
+								<li>
+								Patterns used to select the element(s).
+								</li>
+							</h5></ul>	
 						</article>
 						<article id="sSyntex">
 							<li><h5>Selector Syntax</h5></li>
@@ -122,23 +215,82 @@
 						</article>
 						<article id="sSelector">
 							<li><h5>Simple Selectors</h5></li>
-							<ul>
-								<li><h5>universal selectors</h5></li>
-								<li><h5>type selectors</h5></li>
-								<li><h5>ID selectors</h5></li>
-								<li><h5>class selectors</h5></li>
-								<li><h5>attribute selectors</h5></li>
-							</ul>	
+								<ul>
+									<h5>
+										A smaller part of a selector in CSS3.
+									</h5>
+									<ul>
+										<li><h5>universal selectors</h5></li>
+										<ul><h5>
+											<li>
+												Written as "*" that matches the name of any element type.
+											</li>
+											<li>
+												*[lang=fr]
+											</li>
+										</h5></ul>
+										<li><h5>type selectors</h5></li>
+											<ul><h5>
+												<li>
+													Matches the element type name of a document language.
+												</li>
+												<li>
+													h1 {font-famly: sans-serif}
+												</li>
+											</h5></ul>
+										<li><h5>ID selectors</h5></li>
+											<ul><h5>
+												<li>
+													Based on  identifier, element instance matching.
+												</li>
+												<li>
+													#nav{}
+												</li>
+											</h5></ul>
+										<li><h5>class selectors</h5></li>
+											<ul><h5>
+												<li>
+													Matches subset of "class" value, there must be dot (.) before each value.
+												</li>
+												<li>
+													.past{color: black}
+												</li>
+											</h5></ul>
+										<li><h5>attribute selectors</h5></li>
+										<ul><h5>
+											<li>
+												Author's specified rules that match elements having attributes defined in the source documents. Can match in four ways:
+											</li>
+											<li>
+												[att]
+											</li>
+											<li>
+												[att=val]
+											</li>
+											<li>
+												[att~val]
+											</li>
+											<li>
+												[att|=val]
+											</li>
+										</h5></ul>
+									</ul>
+								</ul>	
 						</article>
 						<article id="pClasses">
 							<li><h5>Psuedo Classes</h5></li>
 							<ul>
-								<li><h5>dynamic psuedo-classes</h5></li>
-								<li><h5>target psuedo-classes</h5></li>
-								<li><h5>language psuedo-classes</h5></li>
-								<li><h5>UI element states psuedo-classes</h5></li>
-								<li><h5>structural psuedo-classes</h5></li>
-								<li><h5>negotiation psuedo-classes</h5></li>
+								<li><h5>
+									Used to define a special state of an element.
+								</h5></li>
+								<ul>
+									<li><h5>dynamic psuedo-classes</h5></li>
+									<li><h5>target psuedo-classes</h5></li>
+									<li><h5>language psuedo-classes</h5></li>
+									<li><h5>UI element states psuedo-classes</h5></li>
+									<li><h5>structural psuedo-classes</h5></li>
+									<li><h5>negotiation psuedo-classes</h5></li>
+								</ul>
 							</ul>	
 						</article>
 						<article id="com">
@@ -223,6 +375,10 @@
 				<section id="ref">
 					<h4>Reference</h4>
 					<ul style="color: blue;">
+						<li>https://www.w3.org/</li>
+						<li>https://www.w3schools.com/css/default.asp</li>
+						<li>https://www.computerhope.com/</li>
+						<li>https://www.tutorialspoint.com/css</li>
 					</ul>
 				</section>
 			</div>
