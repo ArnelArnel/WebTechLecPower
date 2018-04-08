@@ -1,0 +1,171 @@
+body {
+    background-color: #e6e6e6;
+}
+/*Navigation bar*/
+nav {
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F59502;
+}
+li {
+    float: right;
+}
+.active {
+    background-color: #DD8601;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.80vw;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #FF5D00;
+}
+img {
+	width: 15vw;
+	height: 15vw;
+}
+div section {
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+}
+/*Removing the underline of text*/
+a {
+	overflow: hidden;
+	text-decoration: none;
+}
+/* Contact Form feedback.html */
+.contact-form { 
+    padding-left:30px; 
+    width:40vw; 
+    margin-bottom:50px;
+}
+
+.contact-form label {
+    display: block; 
+    padding:10px 0 10px 0;
+}
+
+.contact-form  p{
+    display: block; 
+    color:#1a1a1a;
+    font-family: 'Rockwell';
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.note{
+    margin-left: 1vw;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.contact-form .input_text {
+    padding:10px 10px;
+    width:40vw;
+    background: #fff; 
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    color:#939191;
+}
+
+.contact-form .input_text:focus {
+    border: 3px solid #555;
+}
+
+.contact-form .message{
+    padding:10px 10px;
+    width:40vw; 
+    background:#ffffff; 
+    border: 3px solid #ccc;
+    overflow:hidden;
+    height: 20vw; 
+    color:#939191; 
+    font-size:14px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    color:#939191;
+}
+
+.contact-form .message:focus {
+    border: 3px solid #555;
+}
+
+.contact-form .adv_formbutton{
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 34px;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: -1px 1px #cfcfb0;
+    font-family: 'Geometos';
+    border-radius : 5px;
+    cursor: pointer;
+    margin-top:1vw;
+    font-size: 17px;
+}
+
+.contact-form .adv_formbutton:hover {
+    background-color: #ffffff;
+    color: black;
+}
+
+.adv3_address { 
+    float:left; 
+    width:100%;
+}
+
+.adv3_address .adv3_panel { 
+    border:none; 
+    color:#243036; 
+    font-size: 18px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.adv3_adcontent p { 
+    color:#243036;
+    font-size:18px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.adv3_content { 
+    overflow:hidden; 
+    width:100%;
+    padding:10px; 
+    margin-top: 1vw;
+    background:#e6e6e6;
+}
+
+/*Setting the footer in the middle of the bottom*/
+footer {
+    position: fixed;
+    padding:5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clear:both; 
+    margin-top: 5vw;
+    text-align: center;
+    background:#F59502;
+} 
+footer p{
+    font-size: 1.5vw;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}

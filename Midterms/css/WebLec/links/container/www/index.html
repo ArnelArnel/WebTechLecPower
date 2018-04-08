@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>World Wide Web</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+		<header>
+			<h1>World Wide Web</h1>
+		</header>
+	</div>
+<div class="container">
+	<div class="column">
+	<section>
+		<p>Table of Contents</p>
+		<ul class="tableContent">
+			<li><a href="#www">World Wide Web</a></li>
+			<li><a href="#internet">Internet</a></li>
+			<li><a href="#host">Host</a></li>
+			<li><a href="#client-server">Client-Server</a></li>
+			<li><a href="#media">Media</a></li>
+			<li><a href="#http">HTTP</a></li>
+			<li><a href="#ftp">FTP</a></li>
+			<li><a href="#smtp">SMTP</a></li>
+			<li><a href="#url">URL</a></li>
+			<li><a href="#html">HTML</a></li>
+			<li><a href="#webResource">Web Resource</a></li>
+			<li><a href="Application">Application</a></li>
+				<ul>
+					<li>Web Server</li>
+					<li>Web Browser</li>
+				</ul>
+			<li><a href="#spider">Spider</a></li>
+			<li><a href="#reference">References</a></li>
+		</ul>
+	</section>
+	</div>
+	<main class="column">
+		<div class="paragraph">
+			<button class="collapsible" id="www">World Wide Web</button>
+			<div class="content">
+				<ul>
+					<li>In 1989 Sir Tim Berners-Lee created/invented the World Wide Web (WWW).</li>
+					<li>World Wide Web is a collection of web resources, web application and user on the Internet.</li>
+				</ul>
+			</div>
+			<button class="collapsible" id="internet">Internet</button>
+			<div class="content">
+				<ul>
+					<li>Internet is a global system of interconnected computers that are using communication protocols and provides a
+					variety of information.</li>
+					<li>Internet job is to move computerized information also known as data from one place to another.</li>
+				</ul>
+			</div>		
+			<button class="collapsible" id="host">Host</button>
+			<div class="content">
+				<ul>
+					<li>it provides information resources, services, and application to users.</li>
+					<li>Host includes clients and servers.</li>
+				</ul>
+			</div>
+			<button class="collapsible" id="client-server">Client-Server</button>
+			<div class="content">
+					<li>A application stucture that distributes workload between server and client.</li>
+					<ul>
+						<li>Client</li>
+							<ul>
+								<li>A workstation that has the ability to obtain information from the server.</li>
+							</ul>
+						<li>Server</li>
+							<ul>
+								<li>a program that is responsible for govern access to resources and access to a network.</li>
+							</ul>
+					</ul>
+			</div>
+			<button class="collapsible" id="media">Media</button>
+			<div class="content">
+				<ul>
+					<li>Media contains different digital information that can be access through internet.</li>
+					<li>ex. film, music recording, video tutorials and many more.</li>
+				</ul>
+			</div>
+			<button class="collapsible" id="http">HTTP</button>
+			<div class="content">
+				<ul>
+					<li>HTTP stands for Hypertext Transfer Protocol,it sets to tranfer files on the World Wide Web.</li>
+					<li>HTTP is a protocol that used by web browsers and web servers to communicate with each other on the Internet.</li>
+				</ul>
+			</div>
+			<button class="collapsible" id="ftp">FTP</button>
+			<div class="content">
+				<ul>
+					<li>FTP stands for File Transfer Protocol.</li>
+					<li>FTP is used for transfering files from computer to a network.</li>
+				</ul>
+			</div>	
+			<button class="collapsible" id="smtp">SMTP</button>
+			<div class="content">
+				<ul>
+					<li>SMTP stands for Simple Mail Tranfer Protocol.</li>
+					<li>SMTP is used for sending and receiving e-mails.</li>
+				</ul>
+			</div>
+			<button class="collapsible" id="url">URL</button>
+			<div class="content">
+				<ul>
+					<li>Url stands for Uniform Resource Locator</li>
+					<li>It provides way on locating a web resources, web application, hypertext systems that are on the internet.</li>
+				</ul>
+			</div>
+			<button class="collapsible" id="html">HTML</button>
+			<div class="content">
+				<ul>
+					<li>HTML stands for Hypertext Markup Language</li>
+					<li>It is a language that allows users to create website that can be access through internet.</li>
+				</ul>
+			</div>
+			<button class="collapsible" id="webResource">Web Resources</button>
+			<div class="content">
+				<ul>
+					<li>Web resources are file, data, etc. that can be obtained from the WWW (WORLD WIDE WEB).</li>
+				</ul>
+			</div>
+			<button class="collapsible" id="application">Web Application</button>
+			<div class="content">
+				<ul>
+					<li>Web application is a client-server program that runs on web browser.</li>
+					<br>
+					<h5>Two (2) Categories:</h6>
+						<h5 id="web">Web Server</h5>
+						<ul>
+							<li>Web server is a system that are using HTTP (Hypertext Transfer Protocol) to delivers content or services 
+							that construct web pages.</li>
+						</ul>
+						<h5 id="browser">Web Browser</h5>
+						<ul>
+							<li>is a software application that are use by many used for retrieving and presenting web resources from the
+							World Wide Web.</li>
+						</ul>
+				</ul>
+			</div>
+			<button class="collapsible" id="spider">Spider</button>
+			<div class="content">
+				<ul>
+					<li>Spider is also known as "crawler" or "bot", it is creating entries for search engine index.</li>
+					<li>It visits web sites and reads their pages and provides up-to-date data.</li>
+				</ul>
+			</div>					
+		</main>
+	</div>
+	<footer>
+		<p>All rights reserved 2018.</p>	
+	</footer>
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		    coll[i].addEventListener("click", function() {
+		        this.classList.toggle("active");
+		        var content = this.nextElementSibling;
+		        if (content.style.display === "block") {
+		            content.style.display = "none";
+		        } else {
+		            content.style.display = "block";
+		        }
+		    });
+		}
+		</script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WebTech</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<header>
+			<h1>Hypertext Transfer Protocol</h1>
+		</header>
+	</div>
+	<div class="container">
+		<div class="column">
+			<section>
+				<p>Table of Contents</p>
+					<ul>
+						<li><a href="#http">Hypertext Transfer Protocol</a></li>
+						<li><a href="#reqStandard">HTTP Request Standard Methods</a></li>
+							<ul>
+								<li>Get</li>
+								<li>Head</li>
+								<li>Post</li>
+								<li>Put</li>
+								<li>Option</li>
+								<li>Trace</li>
+							</ul>
+						<li><a href="#reqMessage">Requests Message</a></li>
+							<ul>
+								<li>Request Line</li>
+								<li>Message Headers</li>
+								<li>Empty Line</li>
+								<li>Message Body</li>
+							</ul>
+						<li><a href="#resMessage">HTTP Response Messages</a></li>
+							<ul>
+								<li>Status Line</li>
+								<li>Message Headers</li>
+								<li>Empty Line</li>
+								<li>Message Body</li>
+							</ul>
+						<li><a href="#metProperties">Method Properties</a></li>
+							<ul>
+								<li>Safe Methods</li>
+								<li>Idempotent Method</li>
+							</ul>
+						<li><a href="#statCodes">HTTP Status Codes</a></li>
+							<ul>
+								<li>Informational</li>
+								<li>Success</li>
+								<li>Redirection</li>
+								<li>Client Error</li>
+								<li>Server Error</li>
+							</ul>
+						<li><a href="#mesHeaders">HTTP Message Headers</a></li>
+							<ul>
+								<li>General Header Fields</li>
+								<li>Request Header Fields</li>
+								<li>Response Header Fields</li>
+								<li>Entity Header Fields</li>
+							</ul>
+						<li><a href="#exWebDav">HTTP Extensions Web Dav </a></li>
+							<ul>
+								<li>Request Methods</li>
+								<li>Status Code</li>
+							</ul>
+						<li><a href="#conNegotiation">Content Negotiation</a></li>
+							<ul>
+								<li>Accept-Encoding</li>
+								<li>Accept-Language</li>
+								<li>Accept-charSet</li>
+							</ul>
+						<li><a href="#rangeRequest">Range Request</a></li>
+							<ul>
+								<li>Accept Ranges</li>
+								<li>Byte Range</li>
+							</ul>
+						<li><a href="#authorization">Authorization/Authentication</a></li>
+							<ul>
+								<li>Proxy-authenticate</li>
+								<li>WWW-authenticate</li>
+							</ul>
+						<li><a href="#content">Content</a></li>
+							<ul>
+								<li>Content Models</li>
+								<li>Void Elements</li>
+							</ul>
+						<li><a href="#attributes">Attributes and Attribute Values</a></li>
+							<ul>
+								<li>Global Attribute</li>
+								<li>WAI-ARIA Attribute</li>
+								<li>Character Reference</li>
+								<li>Comments</li>
+							</ul>
+					</ul>
+			</section>
+		</div>
+		<main class="column">
+			<div class="paragraph">
+			<section>
+				<button class="collapsible" id="http">Hypertext Transfer Protocol</button>
+				<div class="content">
+					<ul><li> It is a stateless communication protocol</li>
+					<li> It also do not keep information about clients in between requests</li>
+					<li> HTTP resources are identified using URI's (RFC 3986) or specifically HTTP URL's</li>
+					<li> Scheme (http or https)
+					<li> Authority - user information/authentication credentials,host
+					<li> Query - typically provides as key value (=) pairs with ampersand (&) separated between key value pairs.</li></ul>
+				</div>
+			</section>
+			<section>
+				<button class="collapsible" id="reqStandard">HTTP Request Standard Methods</button>
+				<div class="content">
+					<ul>
+						<li>Get</li>
+						<small class="definition"><ul><li>Most commonly supported by all compliant general purpose serves</li></ul></small>
+						<li>Head</li>
+						<small class="definition"><ul><li>Used to test validity and also identical to get</li></ul></small>
+						<li>Post</li>
+						<small class="definition"><ul><li>Request is suppose to make changes processing of the representation enclosed in the message of the body request</li></ul></small>
+						<li>Put</li>
+						<small class="definition"><ul><li>Create or replace the state pf the target source</li></ul></small>
+						<li>Option</li>
+						<small class="definition"><ul><li>Allows the client to determine the option and requirements associated to the resource</li></ul></small>
+						<li>Trace</li>
+						<small class="definition"><ul><li>Allows the client to see what is being received at the other end of the request chain and use that data for testing or diagnostic information.</li></ul></small>
+					</ul>
+				</div>
+			<section>
+				<button class="collapsible" id="reqMessage">Requests Message</button>
+				<div class="content">
+					<ul>
+						<li>Request Line</li>
+						<small class="definition"><ul><li>Begins with a method token then a Request-URI and protocol version then ending with CRLF.</li></ul></small>
+						<li>Message Headers</li>
+						<small class="definition"><ul><li></li></ul></small>
+						<li>Empty Line</li>
+						<small class="definition"><ul><li></li></ul></small>
+						<li>Message Body</li>
+						<small class="definition"><ul><li></li></ul></small>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<button class="collapsible" id="resMessage">HTTP Response Messsages</button>
+				<div class="content">
+					<ul>
+						<li>Status Line</li>
+						<small class="definition"><ul><li></li></ul></small>
+						<li>Messages Headers</li>
+						<small class="definition"><ul><li></li></ul></small>
+						<li>Empty Line</li>
+						<small class="definition"><ul><li></li></ul></small>
+						<li>Message Body</li>
+						<small class="definition"><ul><li></li></ul></small>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<button class="collapsible" id="metProperties">Method Properties</button>
+				<div class="content">
+					<ul>
+						<li>Safe Methods </li>
+						<small class="definition"><ul><li>Get,Head,Options,Trace</li></ul></small>
+						<li>Idempotent Method </li>
+						<small class="definition"><ul><li></li>Get,Head,Options,Trace,Put,Delete</ul></small>
+					<ul>
+				</div>
+			</section>
+			<section>
+				<button class="collapsible" id="statCodes">HTTP Status Codes</button>
+				<div class="content">
+					<ul>
+						<li>Informational</li>
+						<small class="definition"><ul><li></li></ul></small>
+						<li>Success</li>
+						<small class="definition"><ul><li></li></ul></small>
+						<li>Redirection</li>
+						<small class="definition"><ul><li></li></ul></small>
+						<li>Client Error</li>
+						<small class="definition"><ul><li></li></ul></small>
+						<li>Server Error</li>
+						<small class="definition"><ul><li></li></ul></small>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<button class="collapsible" id="mesHeaders">HTTP Message Headers</button>
+				<div class="content">
+					<ul>
+						<li>General Header Fields</li>
+						<small class="definition"><ul><li>These applies to both requests and responses although there are no relation to the data eventually transfered in the body.</li></ul></small>
+						<li>Request Header Fields</li>
+						<small class="definition"><ul><li>Request header fields has more information regarding the client or the resources that are about to be fetched.</li></ul></small>
+						<li>Response Header Fields</li>
+						<small class="definition"><ul><li>These headers contains additional info regarding the response, for example; the location or about name and version of the server itself.</li></ul></small>
+						<li>Entity Header Fields</li>
+						<small class="definition"><ul><li>Entity header fields has more info about the content length, MIME-type, etc of the body of the entity.</li></ul></small>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<button class="collapsible" id="exWebDav">HTTP Extensions Web Dav (RFC 4918)</button>
+				<div class="content">
+					<ul>
+						<li>Requests Methods</li>
+						<small class="definition"><ul><li>Request methods are defined to specify the action that is wanted to be performed for a given resource.</li></ul></small>
+						<li>Status Codes</li>
+						<small class="definition"><ul><li>Are made to imply either a specific HTTP request has already been completed or not.</li></ul></small>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<button class="collapsible" id="conNegotiation">Content Negotiation</button>
+				<div class="content">
+					<ul>
+						<li>Accept-Encoding</li>
+						<small class="definition"><ul><li>Requests a header of which compression algorithm or specifically a content encoding that the client understands.</li></ul></small>
+						<li>Accept-Language</li>
+						<small class="definition"><ul><li>Requests a header of which locale variant is liked better by the client and which languages the client will be able to comprehend.</li></ul></small>
+						<li>Accept-charSet</li>
+						<small class="definition"><ul><li>Requests a header of which character set is understandable by the client.</li></ul></small>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<button class="collapsible" id="rangeRequest">Range Request</button>
+				<div class="content">
+					<ul>
+						<li> Accept Ranges</li>
+						<small class="definition"><ul><li>These are markers used to support the partial requests on the server.</li></ul></small>
+						<li> Byte Range</li>
+						<small class="definition"><ul><li>The main purpose of byte range is basically to avoid the need to download files even if a small section is all that is required this is essential in terms of conserving bandwidth usage.</li></ul></small>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<button class="collapsible" id="authorization">Authorization/Authentication</button>
+				<div class="content">
+					<ul>
+						<li>Proxy-authenticate</li>
+						<small class="definition"><ul><li>Allows the proxy server to transmit the request further by authenticating requests. </li></ul></small>
+						<li>WWW-authenticate</li>
+						<small class="definition"><ul><li>Defines authentication method which is supposed to be used to get access on resources.</li></ul></small>
+
+					</ul>
+				</div>
+			</section>
+			<section>
+				<button class="collapsible" id="content">Content</button>
+				<div class="content">
+					<ul>
+						<li>Content Models</li>
+						<small class="definition"><ul><li>A content model is basically an explanation of the supposed contents of the element</li></ul></small>
+						<li>Void Elements</li>
+						<small class="definition"><ul><li>Element which does not allow its content model to gain contents in any form under any given situation.</li></ul></small>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<button class="collapsible" id="attributes">Attributes and Attribute Values</button>
+				<div class="content">
+					<ul>
+						<li>Global Attribute</li>
+						<small class="definition"><ul><li>Global attributes are attributes that are common in any elements of html. This means that they can be used in any element. But on the other side, there will be no effects on some elements</li></ul></small>
+						<li>WAI-ARIA Attribute</li>
+						<small class="definition"><ul><li>Makes a way to create web contents and web applications more friendly for people with disabilities.</li></ul></small>
+						<li>Character Reference</li>
+						<small class="definition"><ul><li>These are character encoding-independent mechanisms that is used in inputting any character. </li></ul></small>
+						<li>Comments</li>
+						<small class="definition"><ul><li>Comment tags are not displayed on the browser but are used to put comments on the source code.</li></ul></small>
+					</ul>
+				</div>
+			</section>
+		</div>
+		</main>
+	</div>
+	<footer>
+		<h3>All rights reserved 2018.</h3>
+	</footer>
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		    coll[i].addEventListener("click", function() {
+		        this.classList.toggle("active");
+		        var content = this.nextElementSibling;
+		        if (content.style.display === "block") {
+		            content.style.display = "none";
+		        } else {
+		            content.style.display = "block";
+		        }
+		    });
+		}
+		</script>
+</body>
+</html>
