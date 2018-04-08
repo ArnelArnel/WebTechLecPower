@@ -1,0 +1,6 @@
+a.prev:before {content: "\2190 "}
+a.next:after {content: " \2192"}
+.annotation {
+  color: black !important;
+  background-color: white !important;
+}

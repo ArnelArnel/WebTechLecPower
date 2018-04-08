@@ -1,0 +1,85 @@
+body {
+    background-color: #e6e6e6;
+}
+/*Navigation bar*/
+nav {
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F59502;
+}
+li {
+    float: right;
+}
+.active {
+    background-color: #DD8601;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.80vw;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #FF5D00;
+}
+
+main{
+	text-align: center;
+}
+/*Setting the fonts of the labels of the pages*/
+
+div p {
+    font-size: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/*Removing the underline of text*/
+a {
+	overflow: hidden;
+	text-decoration: none;
+}
+.prelims{
+    margin-top: 10%;
+    -moz-column-count: 3;
+    -moz-columns: 3;
+    -webkit-columns: 3;
+    columns:3;
+}
+.midterms{
+    margin-top: 5%;
+    -moz-column-count: 2;
+    -moz-columns: 2;
+    -webkit-columns: 2;
+    columns:2;
+}
+
+/*Setting the footer in the middle of the bottom*/
+footer {
+    position: fixed;
+    padding:5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clear:both; 
+    margin-top: 5vw;
+    text-align: center;
+    background:#F59502;
+} 
+footer p{
+	font-size: 1.5vw;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WebTech</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<header>
+			<h1>Cascading Style Sheet</h1>
+		</header>
+	</div>
+<div class="container">
+	<div class="column">
+	<section>
+		<p>Table of Contents</p>
+		    <ul class="tableContent">
+		    	<li><a href="#css">CSS</a></li>
+		    	<li><a href="#history">History</a></li>
+    			<li><a href="#verHist"></a> Version History</li>
+    				<ul>
+    					<li>CSS 1</li>
+    					<li>CSS 2</li>
+    					<li>CSS 2 Revision 1</li>
+    					<li>CSS 3</li>
+    				</ul>
+		    	<li><a href="#hss">HTML Stylesheet</a></li>
+		    	<li><a href="#cState">CSS Statements</a></li>
+		    	<li><a href="#cssSelector">CSS Selector</a></li>
+		    		<ul>
+		    			<li>Selector</li>
+		    			<li>Selector Syntax</li>
+		    			<li>Simple Selector</li>
+		    			<li>Pseudo Classes</li>
+		    			<li>Combinators</li>
+		    			<li>Pseudo Elements</li>
+		    		</ul>
+		    	<li><a href="#cRP">CSS Rule Precedence</a></li>
+		    	<li><a href="#cssDeclaration">CSS Declaration</a></li>
+		    		<ul>
+		    			<li>Properties</li>
+		    			<li>Values</li>
+		    		</ul>
+		    	<li><a href="#cssPFP">CSS Preprocessors, Frameworks & Polyfills</a></li>
+		    		<ul>
+		    			<li>CSS Preprocessors</li>
+		    			<li>CSS Framewors</li>
+		    			<li>Polyfills</li>
+		    		</ul>
+		    	<li><a href="#ref">Reference</a></li>
+            </ul>
+	</section>
+	</div>
+		<main class="column">
+			<div class="paragraph">
+				<section>
+					<button class="collapsible" id="css">What is CSS ?</button>
+					<div class="content">
+						<ul>
+							<li>
+							CSS stands for Cascading Style Sheet which is use to style an HTML Document.
+							</li>
+							<li>CSS is a language that describes the presentation of Web pages, including colors, layout and fonts which typically see in a Web pages of a webpage.</li>
+							<li>CSS files can be stored External Stylesheets, Internal Stylesheets and Inline Stylesheets.</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<button class="collapsible" id="history">History</button>
+					<div class="content">
+						<ul>
+						<li>The first draft of Cascading HTML Style Sheets was published by Hakon Wium Lie on October 10, 1994.</li>
+						<li>Bert Bos was the first who respond the first draft of CSS which that time he was building the Argo. Argo is a highly customizable browser with style sheets which he decided to join forces with Hakon Wium Lie.</li>
+						<li>November 1994 CSS proposal was presented at the Web Conference. The following are the topics being discuss according to WC3.
+							<ol>
+								<li>The concept of a balance between author and user preferences was novel. A fictitious screen shot showed a slider with the label user on one side and author on the other. By adjusting the slider, the user could change the mix of his own preferences and those of the author.</li>
+								<li>CSS was perceived by some as being too simple for the task it was designed for. They argued that to style documents, the power of a full programming language was needed. CSS went in the exact opposite direction by making a point out of being a simple, declarative format.</li>
+							</ol>
+						</li>
+					</ul>
+					</div>
+				</section>
+				<section>
+					<button class="collapsible" id="verHist">Version History</button>
+						<div class="content">
+							<ul>
+							<article>
+								<button class="collapsible">CSS 1</button>
+									<div class="content">
+										<ul>
+											<li>CSS level 1 specification was first published on December 17, 1996. Hakon Wium Lie and Ber Bos credited as original developers.</li>
+											<li>A simple style sheet mechanism</li>
+											<li>Allows authors and readers to attach styles to HTML documents.</li>
+											<li>Human readable and writable, and expresses style in common desktop publishing terminology.</li>
+										</ul>	
+									</div>
+							</article>
+							<article>
+								<button class="collapsible">CSS 2</button>
+									<div class="content">
+										<ul>
+											<li>CSS level 2 specification was first published as a recommendation in May 1998 and developed by the W3C.</li>
+											<li>Includes a number of new capabilities like absolute, relative, and fixed positioning of elements and z-index, the concept of media types.</li>
+											<li>Support for aural style sheets that which later replaced by the CSS 3 speech modules and bidirectional text, and new font properties such as shadows.</li>
+										</ul>		
+									</div>
+							</article>
+							<article>
+								<button class="collapsible">CSS 2 Revision 1</button>
+									<div class="content">
+										<ul>
+											<li>CSS level 2.1 is a style sheets language that allows authors and users to attach stle to structured documents.</li>
+											<li>CSS 2.1 first became a Candidate Recommendation on February 25, 2004.</li>
+											<li>CSS 2.1 fixed errors in CSS 2</li>
+										</ul>		
+									</div>
+							</article>
+							<article>
+								<button class="collapsible">CSS 3</button>
+									<div class="content">
+										<ul>
+											<li>CSS level 3 started in 1998, and stil under development until 2014.</li>
+									<li>CSS3 aims at extending CSS 2.1.</li>
+									<li>CSS3 has more support for gradients with the image tag.</li>
+										<ul>
+										<li>Allows you to display smooth transitions between multiple colors using browser instead of image (lessen downloading time). </li>
+										</ul>
+										</ul>		
+									</div>
+							</article>
+						</ul>
+						</div>
+				</section>
+				<section>
+				<button class="collapsible" id="hss">HTML Style Sheet</button>
+					<div class="content">
+						<ul>
+							<button class="collapsible">Source of styles for HTML documents</button>
+								<div class="content">
+									<ul>
+										<li><h5>Author style</h5></li>
+										<ul>
+											<li><h5>
+												External style sheets (recommended)
+												<li>
+													A file containing only CSS syntax.
+												</li>
+												<li>
+													Style information is not explicitly tied directly to the document's element.
+												</li>
+											</h5></li>
+											<li><h5>
+												Embedded styles
+												<li>
+													An entire style sheet are embedded in a HTML document.
+												</li>
+											</h5></li>
+											<li><h5>
+												Inline styles
+												<li>
+													Style sheet information being applied to the current elemet.
+												</li>
+											</h5></li>
+									</ul>
+										<li><h4>User style</h4></li>
+										<li><h4>User agent styles (eg. default style sheet for HTML 4)</h4></li>
+									</ul>
+								</div>
+							<button class="collapsible">cascading origins, cascading</button>
+								<div class="content">
+								
+									
+								</div>
+						</ul>
+					</div>
+				</section>
+				<section>
+				<button class="collapsible" id="cState">CSS Statements</button>
+					<div class="content">
+						<ul>
+							<button class="collapsible">At-Rules</button>
+								<div class="content">
+									
+								</div>
+							<button class="collapsible">CSS Rule Sets aka.. CSS Rules, Style Rules</button>
+								<div class="content">
+								<ul>
+									<li><h4>
+										A set that consists of a selector and a declaration block.
+									</h4></li>
+								</ul>
+								</div>
+						</ul>
+					</div>
+				</section>
+				<section>
+				<button class="collapsible" id="cssSelector">CSS Selector</button>
+					<div class="content">
+						<ul>
+							<article>
+								<button class="collapsible">Selector</button>
+								<ul><h4>
+								<li>Patterns used to select the element(s).</li>
+								</h4></ul>
+							</article>
+							<article>
+								<button class="collapsible">Selector Syntax</button>
+								<div class="content">
+									<ul>
+										<li><h4>Selector Group</h4></li>
+									</ul>
+								</div>
+							</article>
+							<article>
+								<button class="collapsible">Simple Selectors</button>
+								<div class="content">
+								<ul>
+									<h5>
+										A smaller part of a selector in CSS3.
+									</h5>
+									<ul>
+								</div>
+								<div class="content">
+									<ul>
+										<li><h4>Universal selectors</h4></li>
+										<ul><h5>
+											<li>Written as "*" that matches the name of any element type.</li>
+											<li>*[lang=fr]</li>
+											</h5></ul>
+										<li><h4>Type selectors</h4></li>
+										<ul><h5>
+											<li>Matches the element type name of a document language.</li>
+											<li>h1 {font-famly: sans-serif}</li>
+										</h5></ul>
+										<li><h4>ID selectors</h4></li>
+										<ul><h5>
+												<li>Based on  identifier, element instance matching.</li>
+												<li>#nav{}</li>
+										</h5></ul>
+										<li><h4>Class selectors</h4></li>
+										<ul><h5>
+												<li>Matches subset of "class" value, there must be dot (.) before each value.</li>
+												<li>.past{color: black}</li>
+										</h5></ul>
+										<li><h4>Attribute selectors</h4></li>
+										<ul><h5>
+											<li>
+												Author's specified rules that match elements having attributes defined in the source documents. Can match in four ways:
+											</li>
+											<li>[att]</li>
+											<li>[att=val]</li>
+											<li>[att~val]</li>
+											<li>[att|=val]</li>
+										</h5></ul>
+									</ul>	
+								</div>
+							</article>
+							<article>
+								<button class="collapsible">Pseudo Classes</button>
+								<div class="content">
+									<ul>
+										<li><h4>Dynamic pseudo-classes</h4></li>
+										<li><h4>Target pseudo-classes</h4></li>
+										<li><h4>Language pseudo-classes</h4></li>
+										<li><h4>UI element states pseudo-classes</h4></li>
+										<li><h4>Structural pseudo-classes</h4></li>
+										<li><h4>Negotiation pseudo-classes</h4></li>
+									</ul>
+								</div>
+							</article>
+							<article>
+								<button class="collapsible">Combinators</button>
+								<div class="content">
+								<ul><h4>
+									<li> Explains the relationship between the selector</li>
+								</ul></h4>	
+								</div>
+							</article>
+							<article>
+								<button class="collapsible">Psuedo-elements</button>
+								<div class="content">
+									<ul><h4>
+										<li>Keywords that lets you style a specific part of the selected element</li>
+									</ul></h4>
+								</div>
+							</article>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<button class="collapsible" id="cRP">CSS Rule Precedence</button>
+						<div class="content">
+							<ul>
+								<li><h5>Selector Multiple Style Rules</h5></li>
+									<ul>
+										<li><h4>Resolution</h4></li>
+											<ul>
+												<li>by origin and importance</li>
+												<li>by specificity</li>
+												<li>by order</li>
+											</ul>
+									</ul>
+							</ul>	
+						</div>
+				</section>
+				<section>
+					<button class="collapsible" id="cssDeclaration">CSS Declarations</button>
+						<div class="content">
+						<ul>
+							<article>
+								<button class="collapsible">Properties</button>
+								<div class="content">
+									<ul>
+										<li><h4>Short hand properties</h4></li>
+										<li><h4>Vendor specific extensions</h4></li>
+										<li><h4>Custom properties a.k.a CSS variables</h4></li>
+									</ul>
+								</div>
+							</article>
+							<article>
+								<button class="collapsible">Values</button>
+								<div class="content">
+									<ul>
+										<li><h4>Value processing</h4></li>
+										<li><h4>Value types</h4></li>
+											<ul>
+												<li><h4>Keywords</h4></li>
+													<ul>
+														<li>css-wide keywords</li>
+														<li>property-specific keywords</li>
+													</ul>
+												<li><h4>Numbers</h4></li>
+												<li><h4>Dimensions</h4></li>
+													<ul>
+														<li>Length units</li>
+														<ul>
+															<p>Used for numerous CSS properties such as width, height, margin, padding</p>
+														</ul>
+														<li>Angle units</li>
+														<ul>
+															<p> Represent as angle value expressed in degrees, gradians or turns.</p>
+														</ul>
+														<li>Duration units</li>
+														<ul>
+															<p> Specifies the number for a transition animation should take to complete.</p>
+														</ul>
+														<li>Frequency units</li>
+														<ul>
+															<p> Hz
+																represents a frequency in hertz. Examples: 0Hz, 1500Hz, 10000Hz.</p>
+															<p>kHz
+																represents a frequency in kilohertz. Examples: 0kHz, 1.5kHz, 10kHz.</p>
+														</ul>
+														<li>Resolution units</li>
+														<ul>
+															<p> Refers to the the number of independent pixels values per length</p>
+														</ul>
+													</ul>
+												<li><h5>Percentages</h5></li>
+												<ul>
+													<p> Mostly used to define a size relative to an element's parent object.</p>
+												</ul>
+												<li><h5>URLs and URIs</h5></li>
+													<ul>
+													 URI's is a classified as a locator, a name, or both while URL's refers to the subset of URI's refers to subset of URI's that, in addition to identifying a resource.
+													</ul>
+												<li><h5>Colors</h5></li>
+													<ul>
+														<p>Supports all modern browsers that consists of 140 color names (color name, hex values)</p>
+													</ul>
+												<li><h5>String</h5></li>
+													<ul>
+													<p>Delimited by single quation ('') or a double quatation ("")</p>
+													</ul>
+												<li><h5>Functions</h5></li>
+													<ul>
+														<p> Used as a value for various CSS properties</p>
+													</ul>
+												<li><h5>Miscellaneous types</h5></li>
+													<ul>
+													<p> Consist of booleans, base64Binary, hexBinary, float, anyURI, Qname and notation </p>
+													</ul>
+											</ul>
+									</ul>
+								</div>
+							</article>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<button class="collapsible">CSS Preprocessors, Frameworks & Polyfills</button>
+					<div class="content">
+						<ul>
+							<article>
+								<button class="collapsible">CSS Preprocessors</button>
+							<ul>
+								<li><p> Program that takes one type of data and converts it to another type of data. Some popular languages include Haml and Sass.</p></li>
+							</ul>
+							</article>
+							<article>
+								<button class="collapsible">CSS Frameworks</button>
+							<ul>
+								<li><p>Creation of standard classes which can be used to style advanced components of the user interface.</p></li>
+							</ul>
+							</article>
+							<article>
+								<button class="collapsible">Polyfills</button>
+							<ul>
+								<li><p>It is a browser fallback made, in JavaScript, that functionality you expect to work in modern browser.</p></li>
+							</ul>
+							</article>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<button class="collapsible" id="ref">Reference</button>
+						<div class="content">
+							<ul style="color: blue;">
+								<li>https://www.w3.org/</li>
+								<li>https://www.w3schools.com/css/default.asp</li>
+								<li>https://www.computerhope.com/</li>
+								<li>https://www.tutorialspoint.com/css</li>
+							</ul>
+						</div>
+				</section>
+			</div>
+		</main>
+</div>
+	<footer>
+		<h3>All rights reserved 2018.</h3>
+	</footer>
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		    coll[i].addEventListener("click", function() {
+		        this.classList.toggle("active");
+		        var content = this.nextElementSibling;
+		        if (content.style.display === "block") {
+		            content.style.display = "none";
+		        } else {
+		            content.style.display = "block";
+		        }
+		    });
+		}
+		</script>
+</body>
+</html>
