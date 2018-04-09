@@ -1,0 +1,36 @@
+Commits on Apr 9, 2018
+Added readme.txt
+
+@Julol
+Julol committed 35 seconds ago
+ 
+added a duly accomplished consolidated peer evaluation form for the midterm part of the course website project.
+
+@Julol
+Julol committed 16 minutes ago
+ 
+Added the word file containing the contents for Javascript page and mission & vission.
+
+@Julol
+Julol committed an hour ago
+ 
+Midterm Website
+
+@MarkAnthony15
+MarkAnthony15 committed 8 hours ago
+Verified   
+Midterm Course Website
+
+@MarkAnthony15
+MarkAnthony15 committed 8 hours ago
+Verified   
+Update index.html
+
+@osamclar
+osamclar committed 9 hours ago
+Verified   
+Update index.html  …
+
+@CachinJoebemark
+CachinJoebemark committed 9 hours ago
+Verified   
