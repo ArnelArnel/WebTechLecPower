@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WebTech</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+		<div class="header">
+		<header>
+			<h1>Javascript</h1>
+		</header>
+		</div>	
+		<section>
+			<h2>Table of Contents</h2>
+			    <ul class="tableContent">
+			    	<li><a href="#javascript">Javascript</a></li>
+			    	<li><a href="#jsVersion">JS Versions</a></li>
+			    		<ul>
+			    			<li>Javascript 1.8.1</li>
+			    			<li>ECMAScript 5 [ECMA-262 5th Edition]</li>
+			    		</ul>
+			    	<li><a href="#frameworks">Javascrip Frameworks</a></li>
+			    		<ul>
+			    			<li>script.aculo.us</li>
+			    			<li>jQuery</li>
+			    			<li>MooTools</li>
+			    			<li>Prototype</li>
+			    			<li>Dojo Toolkit</li>
+			    		</ul>
+			    	<li><a href="#dom">Document Object Model</a></li>
+			    	<li><a href="#functionality">Functionality</a></li>
+			    		<ul>
+			    			<li>Reticule references to nodes (or node collections) in the DOM</li>
+			    			<li>Traverse the DOM tree</li>
+			    			<li>Construct/copy nodes</li>
+			    		</ul>
+			    	<li><a href="#domObjects">DOM Objects</a></li>
+			    	<li><a href="#keywords">Keywords</a></li>
+			    	<li><a href="#javaEE">Java EE</a></li>
+			    	<li><a href="#APIs">Java EE APIs</a></li>
+			    		<ul>
+			    			<li>Enterprise JavaBeans Technology</li>
+			    			<li>Java Servlet Technology</li>
+			    			<li>Java Server Pages</li>
+			    			<li>Java Server Pages Standard Tag Library </li>
+			    			<li>Java Server Faces</li>
+			    			<li>Java Msg Service API</li>
+			    			<li>Java Transaction API</li>
+			    			<li>JavaMail API</li>
+			    			<li>JavaBeans Activation Framework</li>
+			    			<li>Java API for XML Processing</li>
+			    		</ul>
+			   	</ul>
+		</section>
+			<main>
+				<div class="paragraph">
+					<section>
+						<button class="collapsible" id="javascript">Javascript</button>
+						<div class="content">
+							<br>
+							<li>It was developed in 1995 by Brendan Eich from Netscape Communications to become the scripting language for NNB (Netscape Navigator Browser). Standardized by ECMA International as ECMAScript and was called Mocha, LiveScript, and then we know it today as JavaScript.</li>
+							<br>
+						</div>
+					</section>
+					<section>
+						<button class="collapsible" id="jsVersion">JS Version</button>
+						<div class="content">
+							<button class="collapsible">Javascript 1.8.1</button>
+							<div class="content">
+								<br>
+								<li>The addition of Tracemonkey just-in-time compiler is the main change in this release to improve performance.</li>
+								<br>
+							</div>
+							<button class="collapsible">ECMAScript 5 [ECMA-262 5th Edition]</button>
+							<div class="content">
+								<br>
+								<li>This latest revision was made to look like it will be one of the reason for few years of excitement on the web.</li>
+								<br>
+							</div>
+						</div>
+					</section>
+					<section>
+						<button class="collapsible" id="frameworks">Javascript Frameworks</button>
+						<div class="content">
+							<button class="collapsible">script.aculo.us</button>
+							<div class="content">
+								<br>
+								<li>Makes your web sites and web applications faster by giving easy-to-use, cross-browser user interface JavaScript libraries.</li>
+								<br>
+							</div>
+							<button class="collapsible">jQuery</button>
+							<div class="content">
+								<br>
+								<li>A JavaScript library that is fast, small, and feature-rich.</li>
+								<br>
+							</div>
+							<button class="content">MooTools</button>
+							<div class="content">
+								<br>
+								<li>A collection of JavaScript utilities designed for the intermediate to advance JavaScript developer.</li>
+								<br>
+							</div>
+							<button class="collapsible">Prototype</button>
+							<div class="content">
+								<br>
+								<li>Designed to give solutions to real-world problems, it can add extensions to the browser scripting environment and provides elegent APIs.</li>
+								<br>
+							</div>
+							<button class="collapsible">Dojo Toolkit</button>
+							<div class="content">
+								<br>
+								<li>A toolkit for JavaScript that can help you save your time and is able to scale with your development process by providing everything you need to be able to build a functional Web application.</li>
+								<br>
+							</div>
+						</div>
+					</section>
+					<section>
+						<button class="collapsible" id="dom">Document Object Model</button>
+						<div class="content">
+							<br>
+							<li>Can be accessed via the document object property of the global window object.</li>
+							<br>
+						</div>
+					</section>
+					<section>
+						<button class="collapsible" id="functionality">Functionality</button>
+						<div class="content">
+							<button class="collapsible">Reticule references to nodes (or node collections) in the DOM</button>
+							<div class="content">
+								<br>
+								<li>getElementById(), getElementsByTagName(), byClassName(), byname()
+querySelector(), querySelectorAll()
+</li>
+								<br>
+							</div>
+							<button class="collapsible">Traverse the DOM tree</button>
+							<div class="content">
+								<br>
+								<li>parentNode, parentElement</li>
+								<li>childNodes, children</li>
+								<li>firstChild, lastChild, nextSibling, previousSibling</li>
+								<li>firstElement, lastElementChild, next/previousElementSibling</li>
+								<br>
+							</div>
+							<button class="collapsible">Construct/copy nodes</button>
+							<div class="content">
+								<br>
+								<li>createElement(), createTextMode(), createAttribute()</li>
+								<li>cloneMode(), importMode()</li>
+								<br>
+							</div>
+						</div>
+					</section>
+					<section>
+						<button class="collapsible" id="domObjects">DOM Objects</button>
+						<div class="content">
+							<br>
+							<li>Anchor, Applet, Attr, Comment, DOMException, DOMImplementation, DocumentFragment, Element, Event, Form, Image, Input, Layer, Link, Node, Option, Select, Style, Text, TextArea</li>
+							<br>
+						</div>
+					</section>
+					<section>
+						<button class="collapsible" id="keywords">Keywords</button>
+						<div class="content">
+							<br>
+							<li>break, case, catch, continue, default, delete, do, else, finally, for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, var, void, with</li>
+							<br>
+						</div>
+					</section>
+					<section>
+						<button class="collapsible" id="javaEE"> JAVA EE</button>
+						<div class="content">
+							<br>
+							<li>Is a standard enterprise software in the community that was developed using the Java Community Process, with contributions from industry experts, commercial and open source organizations, Java User Groups, and countless individuals.</li>
+							<br>
+						</div>
+					</section>
+					<section>
+						<button class="collapsible" id="APIs">Java EE APIs</button>
+						<div class="content">
+							<button class="collapsible">Enterprise JavaBeans Technology </button>
+							<div class="content">
+								<br>
+								<li>Promotes fast and simple development of distributed, transactional, secured, and portable Java technology applications.</li>
+								<br>
+							</div>
+							<button class="collapsible">Java Servlet Technology</button>
+							<div class="content">
+								<br>
+								<li>Gives web developers a simple and consistent mechanism for accessing existing business systems and extending the functions of a web server.</li>
+								<br>
+							</div>
+							<button class="collapsible">Java Server Pages </button>
+							<div class="content">
+								<br>
+								<li>Enables a fast and simplified way in creating a dynamic web content.</li>
+								<br>
+							</div>
+							<button class="collapsible">Java Server Pages Standard Tag Library </button>
+							<div class="content">
+								<br>
+								<li>Encapsulates as simple tags the core functionality common to many web applications.</li>
+								<br>
+							</div>
+							<button class="collapsible">Java Server Faces</button>
+							<div class="content">
+								<br>
+								<li>Simplifies web application development by giving a component-centric approach to improving user interfaces of Java Web.</li>
+								<br>
+							</div>
+							<button class="collapsible">Java Msg Service API</button>
+							<div class="content">
+								<br>
+								<li>A programming application interface which provides Java language functions for handling messages. </li>
+								<br>
+							</div>
+							<button class="collapsible">Java Transaction API </button>
+							<div class="content">
+								<br>
+								<li>Enables applications to do distributed transactions such as those transactions that access and updates data on multiple interconnected computers.</li>
+								<br>
+							</div>
+							<button class="collapsible">JavaMail API </button>
+							<div class="content">
+								<br>
+								<li>Provides protocol-independent and platform-independent framework for receiving and sending emails.</li>
+								<br>
+							</div>
+							<button class="collapsible">JavaBeans Activation Framework</button>
+							<div class="content">
+								<br>
+								<li>Is a standard extension to the Java platform that lets the web developer take advantage of standard services.</li>
+								<br>
+							</div>
+							<button class="collapsible">Java API for XML Processing</button>
+							<div class="content">
+								<br>
+								<li>Used in processing xml data by the use of applications embedded in the java programming language.</li>
+								<br>
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+		<footer>
+			<h3>All rights reserved 2018.</h3>	
+		</footer>
+		<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		    coll[i].addEventListener("click", function() {
+		        this.classList.toggle("active");
+		        var content = this.nextElementSibling;
+		        if (content.style.display === "block") {
+		            content.style.display = "none";
+		        } else {
+		            content.style.display = "block";
+		        }
+		    });
+		}
+		</script>
+	</body>
+</html>
